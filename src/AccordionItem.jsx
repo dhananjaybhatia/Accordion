@@ -10,7 +10,7 @@ export default function AccordionItem({
   const isOpen = num === currOpen;
 
   function handleToggle() {
-    onCurrOpen(num); // Toggle open state based on whether this item is open
+    onCurrOpen(isOpen ? null : num); // Toggle open state based on whether this item is open or close
   }
 
   return (
